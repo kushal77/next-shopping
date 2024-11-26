@@ -1,0 +1,48 @@
+.contact{
+    background: color(white);
+
+    h4{
+        position: relative;
+        display: inline-block;
+
+        &:after{
+            content: '';
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            top:130%;
+            left:0;
+            background: linear-gradient(to right,color(pri),color(white));
+        }
+    }
+
+    .write-us{
+        .input-group{
+            border:1px solid color(border);
+            input{
+                border:none;
+
+                &:focus{
+                    border:none!important;
+                }
+            }
+            i{
+                font-size:1.2em;
+                color:color(border);
+            }
+        }
+
+        textarea{
+            box-shadow: none;
+
+            &:focus{
+                border:1px solid color(border);
+            }
+        }
+        button{
+            padding:15px 25px;
+            @include border-radius(5px);
+        }
+    }
+
+}

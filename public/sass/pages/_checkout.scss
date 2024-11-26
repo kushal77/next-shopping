@@ -1,0 +1,134 @@
+.checkout{
+    background: color(white);
+    .card{
+        overflow: hidden;
+        border:none;
+        .card-head{
+            background: color(bg);
+            i{
+                background: color(pri);
+                color:color(white);
+                margin-right:10px;
+                width: 50px;
+                height:50px;
+                line-height:50px;
+                text-align: center;
+            }
+        }
+
+        .form{
+            border: 1px solid color(border);
+            border-top:none;
+
+            input,select{
+                height:40px!important;
+                background: color(bg);
+                border:none;
+                @include transition(none);
+
+                &:hover{
+                    background: color(white);
+                    border:1px solid color(border)!important;
+                }
+
+                &:focus{
+                    border:1px solid color(border)!important;
+                    background: color(white);
+                }
+            }
+
+            textarea{
+                border:none;
+                box-shadow:none;
+            }
+        }
+
+        .shopping-cart-title{
+            border:1px solid color(border);
+            border-top: none;
+
+            .title{
+                background: color(bg);
+                color:grey;
+                font-size:.9em;
+                font-weight:bold;
+                white-space: nowrap;
+                padding: 20px 10px;
+                text-align: center;
+                
+            }
+
+            .content{
+                margin:10px 0;
+                padding-bottom:10px;
+                justify-content: center;
+                border-bottom:1px solid color(bg);
+
+
+                img{
+                    height: 100px;
+                    width: 100px;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+
+                input{
+                    width: 40px;
+                    height:40px!important;
+                    border:none;
+                    background:color(bg);
+
+                    &:hover,
+                    &:focus{
+                        border:1px solid color(border);
+                        background: color(white);
+                    }
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }   
+                
+                a{
+                    color:color(sec);
+
+                    &:hover{
+                        text-decoration:underline!important;
+                    }
+                }
+            }
+
+            .sub-total{
+        
+                @include media(sm){
+                    text-align:center;
+                }
+
+                h6{
+                    white-space: nowrap;
+                    font-weight:bold;
+                }
+            }
+            
+        }
+    }
+
+    .check-it{
+    
+        .checkmark{
+            background: color(bg);
+        }
+    }
+
+    a.button{
+        padding:12px 20px;
+        @include border-radius(5px);
+        background: color(pri);
+        color:color(white);
+
+        &:before,&:after{
+            background: color(sec);
+        }
+    }
+}

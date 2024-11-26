@@ -1,0 +1,115 @@
+.about-us{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.589)),url(../pics/about-bg1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:color(white);
+
+    .happy{
+        letter-spacing: 3px;
+    }
+
+    .bread{
+        h1{
+            position: relative;
+            display: inline-block;
+    
+            &:after{
+                content: '';
+                height: 5px;
+                width: 100%;
+                position: absolute;
+                top:130%;
+                left:0;
+                background: linear-gradient(to right, color(pri),color(sec));
+            }
+        }
+    }
+}
+
+.our-story{
+    .story{
+        h1{
+            position: relative;
+            display: inline-block;
+    
+            &:after{
+                content: '';
+                height: 5px;
+                width: 100%;
+                position: absolute;
+                top:130%;
+                left:0;
+                background: linear-gradient(to right, color(pri),color(bg));
+            }
+        }
+
+        .story-content{
+            p{
+                letter-spacing: 1px;
+                word-spacing:3px;
+                line-height: 1.3em;
+                text-align:left;
+                color:color(overlay);
+            }
+        }
+    }
+}
+
+
+.our-values{
+    background: color(white);
+    h1{
+        position: relative;
+        display: inline-block;
+
+        &:after{
+            content: '';
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            top:130%;
+            left:0;
+            background: linear-gradient(to right, color(pri),color(bg));
+        }
+    }
+
+    .value-image{
+        img{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            @include border-radius(8px);
+            object-fit:contain;
+        }
+        .goal-img{
+            box-shadow:none;
+        }
+    }
+
+    .value-content{
+        li{
+            line-height:30px;
+            position: relative;
+            color:color(overlay);
+            text-align:left;
+            padding-left:40px;
+            font-weight:bold;
+
+            &::before{
+                content:'\f058';
+                position: absolute;
+                left:0;
+                top:0;
+                font-family: 'Font Awesome 5 Free';
+                font-weight:600;
+                color:color(pri);
+            }
+        }
+      
+    }
+}
+
+.around{
+    background: url(../pics/map.png),color(overlay);
+    
+}

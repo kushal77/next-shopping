@@ -1,0 +1,32 @@
+.confirm-order{
+    background: color(white);
+    .left-side{
+        border:1px solid color(border);
+
+        hr{
+            border:1px solid color(bg);
+        }
+    }
+
+    .right-side{
+        .total{
+            border:1px solid color(border);
+        }
+
+        hr{
+            width:90%;
+            border:1px solid color(bg);
+        }
+
+        h5{
+            background: color(overlay);
+            color: color(white);
+        }
+
+        .item-ordered{
+            img{
+                max-height:100px;
+            }
+        }
+    }
+}

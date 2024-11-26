@@ -1,0 +1,153 @@
+.catagory{
+
+    @include media(sm){
+        display:none;
+    }
+    .brand-box{
+        border:1px solid lightgrey;
+        background: color(white);
+        @include border-radius(10px);
+        a{
+            img{
+                height:150px;
+                width:14%;
+                object-fit:contain;
+                padding:20px 30px;
+                border-right:1px solid lightgrey;
+                @include transition(.5s);
+
+                &:hover{
+                    box-shadow:8px 8px 10px rgba(0, 0, 0, 0.151);
+                }
+            }
+            .lst-img{
+                border:none;
+            }
+        }
+    }
+}
+
+
+.catagory-content{
+
+    .price-range-block{
+        .input_wrap{
+            input{
+                border:none;
+                height:30px!important;
+                width:80px;
+            }
+            
+        }
+        button{
+            padding:10px 20px;
+            @include border-radius(5px);
+            @include transform(skew(-5deg));
+        }
+    }
+
+    .right-panel{
+        background:color(white);
+        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.062);
+
+        .newest-product{
+            @include media(sm){
+                padding:0 15px!important;
+            }
+        }
+
+        .sort-by{
+            .sort{
+                p{
+                    white-space: nowrap;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .pagination{
+
+            .page-item{
+                .page-link{
+                    color:color(white);
+                    background: color(pri);
+                    border:none;
+                    margin:3px;
+                    @include transform(skew(-10deg));
+                    outline: none;
+                    box-shadow: none;
+
+                    &:hover{
+                        opacity:.6;
+                    }
+
+                }
+                .arrow{
+                    background: color(sec);
+                }
+            }
+        }
+
+    }
+}
+
+
+.check-it{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#6e6e6e;
+
+    &:hover{
+        input ~ .checkmark{
+            background-color: #ccc;
+        }
+    }
+
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked~{
+            .checkmark{
+                background-color: color(pri);
+
+                &:after{
+                    display: block;
+                }
+            }
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: color(white);
+        @include border-radius(3px);
+
+        &:after{
+            content: "";
+            position: absolute;
+            display: none;
+            left: 7px;
+            top: 3px;
+            width: 5px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            @include transform(rotate(45deg));
+        }
+      }
+}

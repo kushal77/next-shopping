@@ -1,0 +1,134 @@
+.cart{
+    .cart-title{
+        background: color(overlay);
+        color:color(white);
+        @include border-radius(8px 8px 0 0);
+        letter-spacing: 1px;
+
+        div{
+            @include media(mb){
+                display: none;
+            }
+        }
+    }
+    .cart-content{
+        background: color(white);
+
+        .image{
+            img{
+                height:120px;
+                object-fit:contain;
+            }
+        }
+        a{
+            display: block;
+            color:color(sec);
+            margin:5px 0;
+            
+
+            &:hover{
+                text-decoration: underline!important;
+            }
+        }
+    }
+    .edit{
+        background: color(white);
+        margin-top:3px;
+        @include border-radius(0 0 8px 8px);
+        i{
+            font-size:1.3em;
+            padding:0 10px;
+            cursor:pointer;
+            @include transition(.5s);
+
+            &:hover{
+                color:color(sec);
+            }
+        }
+    }
+
+    .coupon-code{
+        .apply{
+            input{
+                width:200px;
+                @include border-radius(6px 0 0 6px!important);
+            }
+            .button{
+                padding:15px 20px;
+                @include border-radius(5px);
+                width:100%;
+                background: color(pri);
+                white-space: nowrap;
+                @include border-radius(0 6px 6px 0);
+    
+                &:after,
+                &:before{
+                    background: color(sec);
+                }
+            }
+        }
+        .update-cart{
+            .btns{
+                display: inline-block;
+                background: color(white);
+                color:color(pri);
+                border:1px solid color(pri);
+                @include transition(.5s);
+                box-shadow: none;
+                padding:15px 20px;
+                @include border-radius(5px);
+                
+
+                &:hover{
+                    background: color(sec);
+                    color:color(white);
+                    border:1px solid color(sec);
+                }
+            }
+            .button{
+                display: inline-block;
+                padding:15px 20px;
+                @include border-radius(5px);
+                background: color(pri);
+                outline:none;
+                box-shadow:none;
+                border:none;
+
+                &:after,&:before{
+                    background: color(sec);
+                }
+            }
+        }
+        
+    }
+
+    .summary{
+        @include border-radius(0 0 8px 8px);
+        
+
+        .order-title{
+            background: color(overlay);
+            @include border-radius( 8px 8px 0 0);
+        }
+        .order-content{
+                @include border-radius(0 0 8px 8px);
+                background: color(white);
+
+            h6{
+                border-bottom:1px solid color(border);
+                font-weight:bold;
+            }
+            .total{
+                border:none;
+            }
+        }
+        .button{
+            width:100%;
+            padding:15px;
+            @include border-radius(6px);
+            color:color(white);
+            text-align:center;
+            
+        }
+    }
+}

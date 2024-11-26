@@ -1,0 +1,118 @@
+.service-details{
+    .img-box{
+        position: relative;
+        img{
+            height:400px;
+            width: 100%;
+            object-fit:cover;
+            @include border-radius(8px);
+            
+        }
+        i{
+            position: absolute;
+            top:-10%;
+            left:50%;
+            @include transform (translate(-50%,10%));
+            height:80px;
+            width: 80px;
+            @include border-radius(50%);
+            background: #fff;
+            border:1px solid transparent;  
+            font-size: 2em;
+            line-height: 80px;
+            text-align: center;
+            
+        }
+    }
+
+    .left{
+        background: #fff;
+        min-height: 200px;
+
+        .feature-wrap{
+            h5{
+                font-weight:bold;
+            }
+            .icon{
+                i{
+                    font-size: 2.5em;
+                    height: 100px;
+                    width: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    @include border-radius(50%);
+                    border:1px solid color(pri);
+                    color:color(pri);
+                }
+            }
+        }
+    }
+
+    .right{
+        h6{
+            letter-spacing: 1px;
+            color:color(overlay);
+            line-height: 25px;
+        }
+        .row{
+            .image{
+                position: relative;
+                overflow: hidden;
+
+                &:after{
+                    content:'';
+                    background: color(pri);
+                    position: absolute;
+                    top:0;
+                    left:-20%;
+                    height:100%;
+                    width: 20%;
+                    opacity: .5;
+                    @include transition(all .5s ease 0s);                    
+                }
+                &:before{
+                    content:'';
+                    background: color(pri);
+                    position: absolute;
+                    top:0;
+                    right:-20%;
+                    height:100%;
+                    width: 20%;
+                    opacity: .5;
+                    @include transition(all .5s ease 0s);
+                }
+
+                &:hover i{
+                    font-size:1.5em;
+                    background: color(pri);
+                }
+                &:hover:after{
+                    left:0;
+                }
+                &:hover:before{
+                    right:0;
+                }
+
+                img{
+                    height: 180px;
+                    width: 100%;
+                }
+
+                i{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%) ;
+                    padding:5px;
+                    color:white;
+                    font-size:0px;
+                    @include transition(all .5s ease 0s);
+                    @include border-radius(5px);
+                    
+                }
+            }
+            
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+.service-search{
+    background: linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.342)),url(../pics/service-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .input-group{
+        width:50%;
+        @include media(sm){
+            width: 80%;
+        }
+    }
+
+    i{
+       width:80px;
+        background: color(sec);
+        display: grid;
+        text-align: center;
+        align-items:center;
+        color:color(white);
+        cursor: pointer;
+        @include transition(.5s);
+        font-size: 1.2em;
+
+        &:hover{
+            background: color(pri);
+        }
+    }
+}
+
+
+.service-que{
+    background: color(white);
+    .head{
+
+        border-bottom: 2px solid color(bg);
+
+        &:nth-last-child(1){
+            border-bottom:none;
+        }
+        .title{
+            word-spacing: 3px;
+    
+            .num{
+                display: inline-block;
+                background: color(pri);
+                width:40px;
+                height:40px;
+                text-align:center;
+                line-height:40px;
+                @include border-radius(50%);
+            }
+        }
+    
+        p{
+            line-height: 25px;
+        }
+    
+        ul li p{
+            margin:10px 0;
+            position: relative;
+            padding-left:30px;
+    
+            &::before{
+                content:'\f058';
+                position: absolute;
+                left:0;
+                top:0;
+                font-family: 'Font Awesome 5 Free';
+                font-weight:600;
+                color:color(sec);
+            }
+        }
+
+        .italic{
+            line-height:25px;
+            padding-left:30px;
+            position: relative;
+
+            &:before{
+                content: '\f110';
+                position: absolute;
+                left:0;
+                top:0;
+                font-family: 'Font Awesome 5 Free';
+                font-weight:600;
+                color:color(sec);
+            }
+        }
+    }
+    
+}

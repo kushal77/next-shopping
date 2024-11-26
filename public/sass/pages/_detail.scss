@@ -1,0 +1,259 @@
+.detail-page{
+    background:color(white);
+
+    .img-box a{
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.377);
+        @include border-radius(12px);
+
+        img{
+          @include border-radius(12px);
+          object-fit: contain;
+        }
+    }
+    .img-list img{
+        height:60px;
+        width:60px;
+        object-fit: cover;
+        margin:0 10px;
+        border:1px solid color(pri);
+        padding:5px;
+
+        &:hover{
+          border:1px solid color(sec);
+        }
+    }
+
+    .title{
+
+      @include media(mb){
+        padding:0 15px!important;
+      }
+
+      .top{
+        word-spacing: 3px;
+      }
+        h4{
+            line-height:30px;
+        }
+        h6 a{
+            &:hover{
+                text-decoration: underline!important;
+                color:color(pri);
+            }
+        }
+        
+          .cart{
+            .button{
+                display: inline-block;
+                color:color(white);
+                @include border-radius(5px);
+                margin-right:10px;
+            }
+          }
+          .buy-now{
+            .button{
+                display: inline-block;
+                color:color(white);
+                @include border-radius(5px);
+                background: color(pri);
+
+                &:after,
+                &:before{
+                  background: color(sec);
+                }
+
+                &:first-child{
+                  display: block;
+
+                  @include media(sm){
+                    display: none;
+                  }
+                }
+            }
+          }
+          
+    }
+
+    .description{
+      background:color(bg);
+      @include border-radius(8px);
+
+
+      h5{
+        background: color(overlay);
+        @include border-radius(8px 8px 0 0);
+      }
+
+      li{
+        text-transform: capitalize;
+      }
+      .head{
+        margin-bottom:5px;
+      }
+
+    }
+
+}
+
+.related-products{
+  background: color(white);
+}
+
+.emi-content{
+  background: color(white);
+
+  .emi-des{
+    background: color(bg);
+    @include border-radius(0 0 8px 8px);
+
+    p{
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+  }
+  h5{
+    background: color(overlay);
+    color:color(white);
+    @include border-radius(8px 8px 0 0);
+  }
+
+  .emi-calc{
+
+    .row{
+      
+      .input-group{
+        background:color(sec);
+        clip-path: polygon(0% 0%, 70% 0, 80% 48%, 70% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0% 0%, 70% 0, 80% 48%, 70% 100%, 0% 100%);
+        padding: 10px 0;
+
+        input{
+          background: none;
+          border:none;
+          color:color(white);
+
+          &:focus{
+            border:none!important;
+          }
+
+          &::placeholder{
+            color:color(white);
+          }
+        }
+      }
+
+      .button{
+        background: color(pri);
+        @include border-radius(6px);
+
+        &:after,&:before{
+          background: color(sec);
+        }
+      }
+
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+      }
+
+      .card{
+        background:color(sec);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+      }
+
+      h4{
+        font-weight: bold;
+        color:color(pri);
+      }
+    }
+  }
+}
+
+.plus-minus-input {
+  align-items: center;
+
+  .input-group-field {
+    text-align: center;
+    border:none;
+    width:50px;
+    background: color(bg);
+    transform:skew(-10deg);
+
+    &::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      appearance: none;
+    }
+  }
+
+  .input-group-button {
+    .circle {
+      border:none;
+      outline:none;
+      width:35px;
+      height:35px;
+      line-height:35px;
+      background: color(sec);
+      color:color(white);
+      @include transform(skew(-10deg));
+      @include transition(.5s);
+
+      &:hover{
+          background: color(pri);
+      }
+    }
+  }
+}
+
+.cart-modal{
+
+  .modal-body{
+    @include media(mb){
+      padding:10px 15px!important;
+    }
+  }
+  .modal-content{
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.226);
+    border-radius:8px;
+    .img-box{
+      position: relative;
+      overflow: hidden;
+
+      &:after{
+        content:'';
+        position: absolute;
+        height:100%;
+        width: 100%;
+        background: color(white);
+        top:0;
+        left:0;
+        animation: tick 1s linear forwards;
+      }
+
+      @include keyframes(tick){
+        0%{
+          left:0;
+        }
+        100%{
+          left:100%;
+        }
+      }
+      img{
+        height: 80px;
+        width: 80px;
+        object-fit:contain;
+      }
+    }
+    .button{
+      height:40px;
+      width:50%;
+      line-height:40px;
+      @include border-radius(5px);
+      @include transform(skew(-10deg));
+
+      &:hover{
+        color:color(white);
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,463 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Hitech Vision Api",
+        "version": "1.0.0"
+    },
+    "host": "hitech.ritendradas.com.np",
+    "schemes": ["http"],
+    "paths": {
+        "/api/home":{
+            "get": {
+                "tags": ["Hitech Vision API"],
+                "summary": "",
+                "description": "",
+                "operationId": "listAllCoach",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/landing":{
+            "get": {
+                "tags": ["Hitech Vision API"],
+                "summary": "",
+                "description": "",
+                "operationId": "listAllCoach",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/login":{
+            "post": {
+                "tags": ["Hitech Vision API"],
+                "summary": "",
+                "description": "",
+                "operationId": "login",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/register":{
+            "post": {
+                "tags": ["Hitech Vision API"],
+                "summary": "",
+                "description": "",
+                "operationId": "register",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "first_name",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "last_name",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/category/all":{
+            "get": {
+                "tags": ["Category API"],
+                "summary": "",
+                "description": "",
+                "operationId": "category_all",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/category/children/get":{
+            "get": {
+                "tags": ["Category API"],
+                "summary": "",
+                "description": "",
+                "operationId": "category_children_get",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "parent_id",
+                        "in": "formData",
+                        "required": true,
+                        "type":"integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/category/get":{
+            "get": {
+                "tags": ["Category API"],
+                "summary": "",
+                "description": "",
+                "operationId": "category_get",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "category_id",
+                        "in": "formData",
+                        "required": true,
+                        "type":"integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/banner/all":{
+            "get": {
+                "tags": ["Banner API"],
+                "summary": "",
+                "description": "",
+                "operationId": "banner_all",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/contact/post":{
+            "post": {
+                "tags": ["Contact API"],
+                "summary": "",
+                "description": "",
+                "operationId": "contact_post",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    },
+                    {
+                        "name": "message",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/profile/get":{
+            "get": {
+                "tags": ["Profile API"],
+                "summary": "",
+                "description": "",
+                "operationId": "profile_get",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "formData",
+                        "required": true,
+                        "type":"integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/profile/post":{
+            "post": {
+                "tags": ["Profile API"],
+                "summary": "",
+                "description": "",
+                "operationId": "profile_post",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/profile/get_regions_states":{
+            "get": {
+                "tags": ["Profile API"],
+                "summary": "",
+                "description": "",
+                "operationId": "get_regions_states",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+        "/api/profile/update_data":{
+            "post": {
+                "tags": ["Profile API"],
+                "summary": "",
+                "description": "",
+                "operationId": "update_data",
+                "produces": ["application/json"],
+                "consumes": ["application/x-www-form-urlencoded"],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "required": true,
+                        "type":"string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/SyncData"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "accessToken": []
+                    }
+                ]
+            }
+        },
+    },
+    "securityDefinitions": {
+        "accessToken": {
+            "type": "apiKey",
+            "name": "authorization",
+            "in": "header"
+        }
+    },
+    "definitions": {
+        "authData": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "code"
+                },
+                "msg": {
+                    "type": "string",
+                    "description": "Message."
+                },
+                "APIKey": {
+                    "type": "string",
+                    "description": "key"
+                },
+                "accessToken": {
+                    "type": "string",
+                    "description": "key"
+                }
+            }
+        },
+        "SyncData": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "code"
+                },
+                "timestamp": {
+                    "type": "integer",
+                    "description": "Sync timestamp."
+                },
+                "msg": {
+                    "type": "string",
+                    "description": "Message."
+                },
+                "data": {
+                    "type": "object",
+                    "description": "all data.",
+                    "properties": {}
+                }
+            }
+        },
+    }
+}

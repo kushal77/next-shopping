@@ -1,0 +1,96 @@
+.footer{
+    background: linear-gradient(rgba(255, 255, 255, 0.685),white),url(../pics/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .footer-logo{
+        img{
+            object-fit: cover;
+            height:50px;
+            width: 210px;
+        }
+    }
+
+    .popular-tags{
+        .tags{
+            margin-top:20px;
+            a{
+                color:color(white);
+                display: inline-block;
+                background: color(sec);
+                padding:6px 25px 6px 6px;
+                @include border-radius(5px 50px 50px 5px);
+                position: relative;
+                margin:5px 5px 5px 0;
+                font-size:.8em;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    height:10px;
+                    width:10px;
+                    @include border-radius(50%);
+                    right:5%;
+                    top:50%;
+                    @include transform(translate(-5%,-50%));
+                    background: color(bg);
+                }
+
+                &:hover{
+                    opacity:.7;
+                }
+            }
+        }
+        
+    }
+    .newsletter{
+        button{
+            height:40px;
+            width: 100%;
+            @include border-radius(8px);
+            border:none;
+            background: color(pri);
+
+            &:before,&:after{
+                background: color(sec);
+            }
+        }
+    }
+    .image{
+        position: relative;
+
+        img{
+            height:300px;
+            width: 100%;
+            object-fit: cover;
+            position:absolute;
+            bottom:0;
+            left:0;
+            @include transform(translateY(16%));
+        }
+    }
+}
+
+
+.copyright{
+    background: color(sec);
+
+    p{
+        letter-spacing: 1px;
+    }
+
+    a{
+        color:color(pri);
+
+        &:hover{
+            color:color(pri);
+        }
+    }
+    .cards{
+        img{
+            height:25px;
+            object-fit:contain;
+            margin:0 3px;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.user-sign{
+    background: color(white);
+    
+    .first-form{
+        background: color(overlay);
+
+        a.forgot{
+            &:hover{
+                text-decoration:underline!important;
+            }
+        }
+        
+    }
+    
+    .form .first-form h4{
+        color: white;
+        padding-bottom: 20px;
+    }
+    
+    .form .first-form p{
+        margin: 0;
+        padding-bottom: 7px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .form .first-form .form-control{
+        border-radius: 0;
+        padding: 25px 10px;
+        box-shadow: none;
+        margin-bottom: 20px;
+        border: none;
+    }
+    
+    
+    
+    .form .first-form .custom-checkbox label{
+        color: white;
+        padding-left: 10px;
+        user-select: none;
+    }
+     
+    
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+        background-color: color(sec);
+      }
+    
+    
+    
+      .form .first-form .btn{
+        border: 2px solid white;
+        @include border-radius(6px);
+        margin-top: 20px;
+        padding: 10px 0px 35px 0px;
+        color: white;
+      }
+    
+      .form .first-form .btn:hover{
+        background: color(sec);
+        border: 2px solid color(sec);
+      }
+    
+      /*-----------------
+      -----------------*/
+    
+      .form .second-form{
+          padding: 40px 20px;
+      }
+    
+      .form .second-form h4{
+        padding-bottom: 20px;
+    }
+    
+    
+    .form .second-form p{
+        margin: 0;
+        padding-bottom: 7px;
+        font-weight: 500;
+    }
+    
+    .form .second-form .form-control{
+        border-radius: 0;
+        padding: 25px 10px;
+        box-shadow: none;
+        margin-bottom: 20px;
+        border: none;
+    }
+    
+    .form .second-form .custom-select{
+        box-shadow: none;
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .form .second-form .button{
+        
+        border-radius: 6px;
+        box-shadow: none;
+        color: white;
+        padding: 15px 30px;
+        transition: .5s;
+    }
+
+}
+
+.confirmation-mail{
+    .success{
+        background: rgba(90, 143, 90, 0.301);
+    }
+    .danger{
+        background: rgba(255, 0, 0, 0.288);
+    }
+}

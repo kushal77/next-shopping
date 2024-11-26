@@ -1,0 +1,114 @@
+.a-one{
+    height: 100vh;
+    background: color(border);
+
+    .row{
+        width:120%;
+        position:absolute;
+        left:-10%;
+
+        @include media(sm){
+            width:100%;
+            position:static;
+            left:0;
+        }
+    }
+    .img-box{
+        height:15vh;
+        img{
+            width: 240px;
+            height:100px;
+            object-fit: cover;
+        }
+    }
+    .right-one{
+        height:85vh;
+        background:url(../pics/right-one-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include transform(skew(-10deg));
+        position: relative;
+        z-index:1;
+        overflow:hidden;
+
+        &:after{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background:rgba(0, 0, 0, 0.404);
+            z-index:-1;
+        }
+
+        @include media(sm){
+            @include transform(none); 
+        }
+
+        @include media(mb){
+            height:42.5vh;
+        }
+
+        a{
+            @include transform(skew(10deg));
+
+            h1{
+                @include media(mb){
+                    font-size:2.5em;
+                }
+            }
+            
+
+        }
+    }
+    .left-one{
+        height:85vh;
+        background:url(../pics/left-one-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include transform(skew(-10deg));
+        position: relative;
+        z-index:1;
+        overflow:hidden;
+
+        &:after{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background:rgba(0, 0, 0, 0.404);
+            z-index:-1;
+        }
+
+        @include media(sm){
+            @include transform(none); 
+            
+        }
+        @include media(mb){
+            height:42.5vh;
+        }
+
+        a{
+            @include transform(skew(10deg));
+
+            h1{
+                @include media(mb){
+                    font-size:2.5em;
+                }
+            }
+        }
+        
+    }
+
+    h1{
+        @include transition(.5s cubic-bezier(1,0,0,1));
+        &:hover{
+            @include transform(scale(1.1));
+        }
+    }
+}

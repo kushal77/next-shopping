@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+
+$pri-font: 'Titillium Web', sans-serif;
+$sec-font: 'Caveat', cursive;
+
+$colors:(
+    pri:#fe0000,
+    sec: #070707,
+    white:#fff,
+    bg:#ededed,
+    overlay:#2a414f,
+    border:#dcdfe1,
+);
+
+.red{
+    color:color(pri);
+
+    &:hover{
+        color:color(pri);
+    }
+}
+
+.cav{
+    font-family:$sec-font;
+}

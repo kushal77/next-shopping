@@ -1,0 +1,14 @@
+.breadcrumbs{
+    
+    h6{
+        a{
+            color:color(sec);
+            font-weight:bold;
+            @include transition(.5s);
+
+            &:hover{
+                color:color(pri);
+            }
+        }
+    }
+}
