@@ -54,7 +54,7 @@
 	            </div>
 	            <div class="col-lg-5 py-4">
 	                <h4 class="font-weight-bold">OUR LOCATION</h4>
-	                <iframe class="my-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.091964212953!2d85.34678271440124!3d27.68355238280177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a18187378f%3A0x8ba2460dd7896e64!2sOnline%20Zeal!5e0!3m2!1sen!2snp!4v1572065502249!5m2!1sen!2snp" width="100%" height="350" frameborder="0" style="border:0; border-radius:10px;" allowfullscreen=""></iframe>
+	                <iframe class="my-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.3424798265974!2d28.091763677136516!3d61.06499647550098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469094f4435a9599%3A0x133e1ee3dcc2a5cd!2sLUT%20University!5e0!3m2!1sen!2sfi!4v1732900561230!5m2!1sen!2sfi" width="100%" height="350" frameborder="0" style="border:0; border-radius:10px;" allowfullscreen=""></iframe>
 	            </div>
 	            <div class="col-lg-4 write-us py-4">
 	                <h4 class="font-weight-bold">WRITE US</h4>

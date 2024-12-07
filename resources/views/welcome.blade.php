@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Next Shopping</title>
-    <link rel="icon" href="{{asset("pics/logo.png")}}" type="image/gif" >
+    <link rel="icon" href="{{asset("pics/logo1.png")}}" type="image/gif" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">

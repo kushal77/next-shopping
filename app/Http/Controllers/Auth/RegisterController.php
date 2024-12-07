@@ -89,8 +89,8 @@ class RegisterController extends Controller
         /** send confirm mail**/
         Mail::send('email_template.verifyemail',['user'=>$user],
             function ($m) use ($user) {
-                $m->from('info@hitech.com', 'Hitech');
-                $m->to($user['email'], $user['first_name'])->subject('Verify Email Hitech!');
+                $m->from('aavishbaj@gmail.com', 'Next Shopping');
+                $m->to($user['email'], $user['first_name'])->subject('Verify Email Next Shopping!');
             }
         );
         return 1;
