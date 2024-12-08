@@ -32,15 +32,15 @@
 	                <h4 class="font-weight-bold">CONTACT US</h4>
 	                <div class="phone my-5 d-flex align-items-center">
 	                    <i class="fas fa-2x mr-3 red fa-mobile-alt"></i>
-	                    <p>{{$phoneno}}</p>
+	                    <p>+358 406127679</p>
 	                </div>
 	                <div class="map my-5 d-flex align-items-center">
 	                    <i class="fas fa-2x mr-3 red fa-map-marker-alt"></i>
-	                    <p>{{$address}}</p>
+	                    <p>Kathmandu, Nepal</p>
 	                </div>
 	                <div class="mail my-5 d-flex align-items-center">
 	                    <i class="far fa-2x mr-3 red fa-envelope-open"></i>
-	                    <p>{{$email}}</p>
+	                    <p>hello.kushal53@gmail.com</p>
 	                </div>
 	                <div class="follow">
 	                    <h4 class="font-weight-bold">FOLLOW US</h4>
