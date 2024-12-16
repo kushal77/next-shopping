@@ -16,11 +16,19 @@ Open in VS Code or any compiler/Editor of choice
 Run the code using the link given above.
 Tech Stack: HTML/CSS, Javascript, PHP My Recomendation Download all the project files from github Open in VS Code or any compiler/Editor of choice Run the code using the link given above.
 
-Steps To Run on 
-1. Install XAAMP
-2. download the code from github
-3. Run XAMP server
-Steps To Run on
-Install XAAMP
-download the code from github
-Run XAMP server
+Run the project Locally
+
+- Clone the repository
+git clone https://github.com/kushal77/next-shopping
+
+-Navigate to the project directory
+cd next-shopping
+
+-Install the dependencies
+npm install
+
+-Set up the environment variable
+-Start the development server
+npm run dev
+
+
